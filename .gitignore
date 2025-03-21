@@ -169,3 +169,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/.gitignore
+/.idea/micropython-tools-settings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/stellar-frame.iml
+/.idea/vcs.xml
