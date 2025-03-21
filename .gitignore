@@ -176,3 +176,5 @@ cython_debug/
 /.idea/modules.xml
 /.idea/stellar-frame.iml
 /.idea/vcs.xml
+
+/WIFI_CONFIG.py
