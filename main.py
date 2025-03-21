@@ -14,9 +14,11 @@ port = 80
 
 app = webserver()
 
+
 @app.route('/')
 async def index(request, response):
-    await response.send_file('index.html', content_type = 'text/html')
+    await response.send_file('index.html', content_type='text/html')
+
 
 # create a PicoGraphics framebuffer to draw into
 graphics = PicoGraphics(display=DISPLAY_STELLAR_UNICORN)
@@ -50,7 +52,7 @@ async def animate_text():
         width = graphics.measure_text(MESSAGE, 1)
         scroll += 0.25
         if scroll > width:
-          scroll = float(-StellarUnicorn.WIDTH)
+            scroll = float(-StellarUnicorn.WIDTH)
 
         # clear the graphics object
         graphics.set_pen(BLACK)
@@ -97,7 +99,7 @@ def setup():
     # Wi-Fi
     network_manager = NetworkManager(WIFI_CONFIG.COUNTRY, status_handler=status_handler)
 
-    #app.add_resource(text, '/update')
+    # app.add_resource(text, '/update')
 
     show_boot_screen()
 
